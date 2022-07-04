@@ -1,0 +1,24 @@
+from random import *
+def ref():
+  a="Life is short,art is long"
+  b="Live,Love,Laugh"
+  c="honey is gem"
+  d="Looking gorgeous"
+  f="Yes,will agree with u"
+  g="No,Not Interested"
+  h="Sense of Humour"
+  i="Creativity coding"
+  j="Hey! Can u hear me?"
+  k="All the best"
+  l="Dude! Lets have burger"
+  m="Dancing Queen"
+  x=[a,b,c,d,f,g,h,i,j,k,l,m] 
+  z=sample(x,k=1)
+  zzz=' '.join(map(str,z))
+  print(zzz)
+  
+
+name=input("WHO ARE YOU ?\n")
+zz=input(name +" whats your question to Magic 8 Ball : ")
+print("Magic 8 Ball : ",end=" ")
+ref()
