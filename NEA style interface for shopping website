@@ -1,0 +1,34 @@
+from time import *
+from os import *
+import sys
+def one():
+    print("Our books section is coming soon, you might need to go into an actual store until then. Sorry.")
+    sleep(2)
+def two():
+    print("Yeah, sorry. It's Netflix or your local multiplex until our developer sorts themselves out. Sorry.")
+    sleep(2)
+def three():
+    pass
+
+while(True):
+    print("Welcome to")
+    print("SHERWOOD")
+    print("  PRIME")
+    print("")
+    print("One stop shopping")
+    sleep(2)
+    system("cls")
+    print("\n\nS H E R W O O D   P R I M E")
+    print("-- Enter the number to make your selection --")
+    print("1. Books\n2. Movies\n3. My Account\n4. exit")
+    menuselection=input("> ")
+    if(menuselection=="1"):
+        one()
+    elif(menuselection=="2"):
+        two()
+    elif(menuselection=="4"):
+        sys.exit()
+    else:
+       three()   
+    sleep(1)
+    system('cls')
