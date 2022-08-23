@@ -3,7 +3,7 @@ from os import *
 import sys
 def grade():
     s1,s2,s3,s4,s5=[int(x) for x in input("Enter 5 subject marks : ").split()]
-    average=(s1+s2+s3+s4+s5)%5
+    average=(s1+s2+s3+s4+s5)/5
     if(average>80):
         print("Honors")
     elif(average>60 & average<80):
