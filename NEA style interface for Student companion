@@ -3,7 +3,7 @@ from os import *
 import sys
 def grade():
     s1,s2,s3,s4,s5=[int(x) for x in input("Enter 5 subject marks : ").split()]
-    average=(s1+s2+s3+s4+s5)/5
+    average=int((s1+s2+s3+s4+s5)/5)
     if(average>80):
         print("Honors")
     elif(average>60 & average<80):
@@ -14,7 +14,7 @@ def grade():
         print("third class")
     else:
         print("failed")
-    sleep(2000)
+    sleep(5)
 def two():
     print("Yeah, sorry. It's Netflix or your local multiplex until our developer sorts themselves out. Sorry.")
     sleep(5)
@@ -43,3 +43,38 @@ while(True):
        three()   
     sleep(5)
     system('cls')
+    /*----------OUTPUT---------
+Welcome to
+Honey Companion
+  >.< 
+
+One stop for students
+sh: 1: cls: not found
+
+
+HONEY Companion 
+-- Enter the number to make your selection --
+1. Grade Teller
+2. Movies
+3. My Account
+4. exit
+> 1
+Enter 5 subject marks : 10 30 60 70 60
+first  class
+sh: 1: cls: not found
+Welcome to
+Honey Companion
+  >.< 
+
+One stop for students
+sh: 1: cls: not found
+
+
+HONEY Companion 
+-- Enter the number to make your selection --
+1. Grade Teller
+2. Movies
+3. My Account
+4. exit
+> 4
+*/
