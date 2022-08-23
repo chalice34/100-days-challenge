@@ -1,0 +1,45 @@
+from time import *
+from os import *
+import sys
+def grade():
+    s1,s2,s3,s4,s5=[int(x) for x in input("Enter 5 subject marks : ").split()]
+    average=(s1+s2+s3+s4+s5)%5
+    if(average>80):
+        print("Honors")
+    elif(average>60 & average<80):
+        print("first  class")
+    elif(average>50 & average<59):
+        print("second class")
+    elif(average>40 & average<49):
+        print("third class")
+    else:
+        print("failed")
+    sleep(2000)
+def two():
+    print("Yeah, sorry. It's Netflix or your local multiplex until our developer sorts themselves out. Sorry.")
+    sleep(5)
+def three():
+    pass
+
+while(True):
+    print("Welcome to")
+    print("Honey Companion")
+    print("  >.< ")
+    print("")
+    print("One stop for students")
+    sleep(5)
+    system("cls")
+    print("\n\nHONEY Companion ")
+    print("-- Enter the number to make your selection --")
+    print("1. Grade Teller\n2. Movies\n3. My Account\n4. exit")
+    menuselection=input("> ")
+    if(menuselection=="1"):
+        grade()
+    elif(menuselection=="2"):
+        two()
+    elif(menuselection=="4"):
+        sys.exit()
+    else:
+       three()   
+    sleep(5)
+    system('cls')
